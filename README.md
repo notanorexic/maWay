@@ -3,7 +3,7 @@ My journey starts today. I'm committed to becoming a Full Stack developer and bu
 
 
 ## HTML проекты
-- Форма опроса (./(freeCodeCamp) Анкета/)
+- [Анкета] (./html-projects/survey-form/) - форма опроса freeCodeCamp
 
 ## Прогресс
 - Изучено: 
