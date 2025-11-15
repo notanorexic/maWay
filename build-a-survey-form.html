@@ -1,0 +1,196 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+ <main>
+   <form id="survey-form" method="POST" action="">
+      <section>
+        <label id="name-label" for="name">Name</label>
+        <input 
+          type="text"
+          required
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          size="20"
+          minlength="2"
+          maxlength="25"
+          />
+      </section>
+      <section>
+        <label id="email-label" for="email">Email</label>
+        <input 
+          type="email" 
+          required
+          id="email"
+          name="email"
+          placeholder="Enter your Email"
+          size="20"
+          />
+      </section>
+      <section>
+        <label id="number-label" for="number">Age (optional)</label>
+        <input 
+          type="number"
+          id="number"
+          name="age"
+          placeholder="Age"
+          min="3"
+          max="100"
+          />  
+      </section>
+
+   <p>Which option best describes your current role?</p>
+   
+   <select id="dropdown">
+     <option
+       value="select current role"
+       disabled
+       selected
+     />
+     Select current role
+     </option>
+     <option value="wanderer">Wanderer</option>
+     <option value="roleplayer">Roleplayer</option>
+     <option value="mike tyson">Mike Tyson</option>
+     <option value="monster from under the bed">Monster from Under the Bed</option>
+   </select>
+
+    <p>Would you recommended freeCodeCamp to a friend?</p>
+
+    <input id="definitely-option" type="radio" name="recommendation" value="recommendation" checked />
+    <label for="definitely-option">Definitely</label>
+
+    <input id="maybe-option" type="radio" name="recommendation" value="recommendation" />
+    <label for="maybe-option">Maybe</label>
+
+    <input id="not-sure" type="radio" name="recommendation" value="recommendation" />
+    <label for="not-sure">Not sure</label>
+
+
+   <p>What is your favorite fearute of freeCodeCamp?</p>
+   
+   <select name="feature" id="feature">
+     <option 
+       value="select an option"
+       disabled
+       selected
+       />
+       Select an option
+      </option>
+     <option value="challenges">Challenges</option>
+     <option value="projects">Projects</option>
+     <option value="open sourse">Open Sourse</option>
+     <option value="positive reinforcement system">Positive reinforcement system</option>
+   </select>
+   
+   <p>What would you like to see improoved? (Check all that apply)</p>
+
+   <section>
+     <input 
+       type="checkbox"
+       id="new-year"
+       name="new-year"
+       value="new-year"
+       />
+     <label for="new-year">New Year</label>
+
+     <input 
+       type="checkbox"
+       id="more-snow"
+       name="more-snow"
+       value="more-snow"
+       />
+     <label for="more-snow">More Snow</label>
+       
+    <input 
+       type="checkbox"
+       id="kitten-videos"
+       name="kitten-videos"
+       value="kitten-videos"
+       />
+     <label for="kitten-videos">Kitten Videos</label>
+
+    <input 
+       type="checkbox"
+       id="studios"
+       name="studios"
+       value="studios"
+       />
+     <label for="studios">Studios</label>
+
+     <input 
+       type="checkbox"
+       id="homemade-porn"
+       name="homemade-porn"
+       value="homemade-porn"
+       />
+     <label for="">Homemade Porn</label>
+
+     <input 
+       type="checkbox"
+       id="less-negarivity"
+       name="less-negarivity"
+       value="less-negarivity"
+       />
+     <label for="less-negarivity">Less Negarivity</label>
+
+     <input 
+       type="checkbox"
+       id="psychological-support"
+       name="psychological-support"
+       value="psychological-support"
+       />
+     <label for="psychological-support">Psychological Support</label>
+
+     <input 
+       type="checkbox"
+       id="phi"
+       name="phi"
+       value="phi"
+       />
+     <label for="phi">PHI</label>
+
+     <input 
+       type="checkbox"
+       id="maslenitsa-scarecrow"
+       name="maslenitsa-scarecrow"
+       value="maslenitsa-scarecrow"
+       />
+     <label for="maslenitsa-scarecrow">Maslenitsa Scarecrow</label>
+
+     <input 
+       type="checkbox"
+       id="13-calves"
+       name="13-calves"
+       value="13-calves"
+       />
+     <label for="13-calves">13 Calves</label>
+   </secton>
+     
+   <p>Any comments or suggestions?</p>
+
+   <label for="comments"></label>
+   <textarea  id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+   
+   <section>
+   <button id="submit" type="submit">Submit</button>
+   </section>
+   
+   </form>
+ </main>
+  </body>
+</html>
+
+** end of index.html **
+
