@@ -3,7 +3,7 @@ My journey starts today. I'm committed to becoming a Full Stack developer and bu
 
 
 ## HTML проекты
-- [Анкета](./html-projects/survey-form/build-a-survey-form.html)
+- [Форма опроса](./html-projects/survey-form/build-a-survey-form.html)
 
 ## Прогресс
 - Изучено: 
