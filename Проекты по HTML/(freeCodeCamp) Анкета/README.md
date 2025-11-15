@@ -1,6 +1,6 @@
 # Форма опроса
 
-Сертификационный проект темы "Формы и таблицы" с freeCodeCamp 
+Сертификационный проект курса "Responsive Web Design Certification" темы "Формы и таблицы" с freeCodeCamp 
 
 ## Технологии:
 - HTML5
