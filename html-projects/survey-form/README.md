@@ -1,4 +1,4 @@
-# Survey Form
+# Форма опроса
 
 Сертификационный проект курса "Responsive Web Design Certification" темы "Формы и таблицы" с freeCodeCamp
 
