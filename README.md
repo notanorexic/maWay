@@ -12,3 +12,4 @@ My journey starts today. I'm committed to becoming a Full Stack developer and bu
          семантический HTML
          Формы и таблицы
 - Начал делать свой проект  [Онлайн газета](./html-projects/online_newspaper/online_newspaper_SVETskiy_soyuz.html) в рамках практики
+Впервые запустил Git Bush и загрузил сюда файлы
