@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTH-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СВЕТский союз</title>
+
+    <style>
+        #books a {
+            color: black;
+            text-decoration: none;
+        }
+        </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Онлайн издание СВЕТский союз</h1>
+        <time datetime="2025-11-17" 17 Ноября 2025</time>
+    </header>
+</body>
+
+<fieldset>
+    <p>АбуОпросник с вопросами с выбором вариантов и кнопкой,поткрывающей с</p>
+    <!-- Сделать разделы с фильмами ( с рейтингом)
+    Книгами (рейтингом,цитатами и полем для рецензий)
+    Рекламой нового рестарана (с таблицей новгоднего меню)
+    Опросник с вопросами (с выбором вариантов и кнопкой,поткрывающей скрытый отдел с правильными ответами)
+    Раздел с частушками от читателей
+    -->
+    <nav>
+        <ul>
+            <li><a href="#movies_series-2025">Кино и Сериалы 2025</a>
+            <li><a href="#books">Книги</a>
+            <li><a href="#new_restaurant">Новый ресторан!</a>
+            <li><a href="#polis">Опросы</a>
+            <li><a href="#ditties">Частушки от Болтушки</a>
+            <li><a href="#sinyak">Пылающие сердца: Трёхсотый шанс</a>
+        </ul>
+    </nav>
+</fieldset>
+<main>
+
+    <section id="movies_series-2025">
+        <h2>Фильмы и Сериалы 2025</h2>
+        <!--Описать тенденции фильмов 2025 года и предложить навигацию-->
+        <p></p>
+        <!--Вставить названия фильмов и сделать навигацию по ним-->
+        <nav>
+            <ul>
+                <li><a href="#pluribus">Из многих (Pluribus)</a></li>
+                <li><a href="#ballerina">Балерина</a></li>
+                <li><a href="#a_working_man">Мастер</a></li>
+            </ul>
+        </nav>
+        <!--Вставить фильмы (добавить рейтинговую систему оценки,цитаты режиссёров)-->
+        <article id="pluribus">
+            <div>
+                <header>                
+                    <h3>Из многих (Сериал 2025-...)</h3>
+                    <p>Pluribus</p>
+                    <time datetime="2025-07-30"></time>               
+                </header>
+            </div>
+            <!-- рейтинг -->
+            <figure>
+                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/4483445/071e9ca1-f3c1-4c2a-84e7-78ca0c62c314/300x450"
+                    alt="Постер">
+                <div>
+                    <iframe 
+                        src="https://www.youtube.com/embed/a6lzvWby9UE" 
+                        width="300" 
+                        height="190" 
+                        frameborder="0"
+                        allow="accelerometer autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen 
+                        />
+                    </iframe>
+                    <div>
+                        <span>30 июля 2025</span>
+                    </div>
+                </div>
+                <blockquote>
+                    "Мы не просто зрители, мы соавторы этого кинематографического опыта"
+                </blockquote>
+                <p>— Дени Вильнёв, <cite>Интервью Variety</cite></p>
+            </figure>
+            <!-- Я бы сделал так,но хочется научиться чему-о новому,поэтому буду делать по-другому -->
+            <!-- <select name="rating">
+                <option selected disabled value="0">Оценить</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <button id="submit">Отправить</button> -->
+            <form>
+                <details>
+                    <summary>Оценить</summary>
+                    <div>
+
+                        <legend>Ваша оценка фильму</legend>
+
+                        <input type="radio" id="one_point" name="rating" value="1">
+                        <label for="one_point">1</label>
+
+                        <input type="radio" id="two_point" name="rating" value="2">
+                        <label for="two_point">2</label>
+
+                        <input type="radio" id="three_point" name="rating" value="3">
+                        <label for="three_point">3</label>
+
+                        <input type="radio" id="four_point" name="rating" value="4">
+                        <label for="four_point">4</label>
+
+                        <input type="radio" id="five_point" name="rating" value="5">
+                        <label for="five_point">5</label>
+
+                        <input type="radio" id="six_point" name="rating" value="6">
+                        <label for="six_point">6</label>
+
+                        <input type="radio" id="seven_point" name="rating" value="7">
+                        <label for="seven_point">7</label>
+
+                        <input type="radio" id="eight_point" name="rating" value="8">
+                        <label for="eight_point">8</label>
+
+                        <input type="radio" id="nine_point" name="rating" value="9">
+                        <label for="nine_point">9</label>
+
+                        <input type="radio" id="ten_point" name="rating" value="10">
+                        <label for="ten_point">10</label>
+                    </div>
+
+                    <div>
+                        <p for="comment">Ваш комментарий</p>
+                        <textarea id="comment" name="comment" placeholder="Поделитесь впечатлениями"></textarea>
+                        <button type="submit">Отправить</button>
+                    </div>
+                </details>
+            </form>
+
+            <section>
+                <div>
+
+                    <p>Рейтинг</p>
+                    <!-- Хочется красиво и работающе, но у меня не полуилось - я пока не знаю как))вот картинка-костыль от Deppseek'а)) -->
+                    <div class="clean-rating">
+                        <span class="score">8.2</span>
+                        <span class="scale">/10</span>
+                    </div>
+
+                    <style>
+                        .clean-rating {
+                            display: inline-flex;
+                            align-items: baseline;
+                            gap: 2px;
+                        }
+
+                        .score {
+                            font-size: 1.2em;
+                            font-weight: bold;
+                            color: #28a745;
+                        }
+
+                        .scale {
+                            font-size: 0.9em;
+                            color: #6c757d;
+                        }
+                    </style>
+                </div>
+            </section>
+
+
+            <div>
+                <h4>Отзывы:</h4>
+                <blockquote>
+                    "Серил пиздатый"
+                    <cite>Петя Пупкин, ⭐ 9,5/10</cite>
+                </blockquote>
+
+                <blockquote>
+                    "Сериал для настоящего быдва"
+                    <cite>Маша Медведева, ⭐ 3/10</cite>
+                </blockquote>
+
+                <blockquote>
+                    "Раньше кинокартины делали лучше"
+                    <cite>Иванка Штамп, ⭐ 6,5/10</cite>
+                </blockquote>
+            </div>
+                
+        </article>
+
+        <article id="ballerina">
+            <header>
+                <h3>Балерина (2025)</h3>
+                <p>Ballerina</p>
+                <time datetime="2025-04-18"></time>
+            </header>
+
+            <figure>
+                <img src="https://kinopoisk-ru.clstorage.net/R2e9Y8350/d214526uYEv3/_N4qljSb88LDZrJcOhu_UNziliwwxm7LfEKsaMC-Q9Lz6vLLAjLNixNmzmdIGASl6MdbK0OUJt00jnJKT4AP8ogLXtcVOzaWwtPXed9aa5FpATSa0qQcfV-Rf16nShcmgo_HLtY27W6HU3-DbF5iJPik2CynQkLJEatx6_sQ6iTsHLkWogtwkze18W44uv4E7EDkeVEm_xydknwcVPv1NdY_pTwWVdw_VJPbcA3803IoVEhs5tBhejHJwsqq43r1Lazo5-LZs6NHReDNunq-9C6BlavSFL9O_zNMb1eKBMTWz5c-F9dvzydAmQFPbtPDqObpPGYSYsuhC1JJesBJlE9eu3dQuDHxRddjX-lpX7dtQkUaA8esrJ2gvm1kCGXV1W3Ur6VHPR9XQ4jzPY9hA7qW6Zw2o-P68XlgmqgQuDeuP2sHMrtzwFb1UBx4uWwXXCB0CkL3fSyeg32-BgpmJqa-JpyGp96fVzOKEWwuk7DYJAt8hYBS-yKYI-jKcTpVXp24J-LIc1OWB1K9qUlMBg8At1nxhG2tnvLsLNdpJITVDfUttOVPzLfDeMDNbrMQGhbKTxaQM3nRumJZSdF6td9fa4WD-_HTdqcTLupInHUNogTrkfYuLjxS_m1leZb0dK1WrNXlTa0Eg2szfl3A82tUeByn8QKbI3miS_nQ6CcPfbgnUPixQ9UWUHwqyK2Uv6AHG2JmfV__8n4vNVjmZ6T99O4Els6eZBJJwdxcsvBKNOsuNBCSysOYAQo7kggnTyyKNRArc2F3ZfHNmiueRRwiNEjwFNysLKFufXSI5JVGTfbspfavbDTym1HNvUBAKJR7rNVDENrxyjBLaZKaF629O6XBS_DzBbegLcoYnbb-45QqQjTt_g7AzX2XuBSn1E8lDpSXTM9FcUvxDn8xU4tVWy13UUGK49khWkrQGre9zhvno3pg0MU1QI3K2_-nDvAlCqOXD_9toS6OlcgGNPVe9czk91yuR0GZQg-NccB4dFqMl_CjKHHbc3oIMMvVnSzo55DZUOBV9FHdWSksZlxSp3ihJN9vLHJ_TFa45gSk_1YvF2bunOaDu7BcT4DTiWZLnhQBkXuyu8LK-wJqhTzOS0YSmzDRd1cS3JtbLeU8g4RqgsUs3DwCbQ2WyYQ1JE9Wz0dnv08UsblTHD3Aw7p3Gi5UkyGaUPkDetsAGwe8DyvncfqysKSWUt36qm92L0AHuIBlb26sU0xOtomUN0b_Zvy0pq8-5oM50W29sfJYFYhd1DBBuTKYkWpqIRhUno4o1GBLEREFZdMsedselB8gh_lR5J6fHkK9_AQIVVUmfVadZfeNflVxiZI9nyBwuJfIXpfxcvjjeUN4GiEY951uazcxSaIQ1IZSDvoIv3TMQbb78pVvvz2jzg5E2zZ1h-7V3BQEvV53wUrBDz6hIZhkCZ_nY2I6Y3lD-vphaBb9HZj2QVgT4rd2ET9IyN1GrLDUCpPGLv3uk89-RDn093VcVv0XRK6cZwEZk13tMXIrdFu_dBCz2vLp8tq5wvj2nO7rRhM78PCXN_Ks-WnMhIxx94nCFl3_3JLevJfblwVkL2Vu1rSOvsQyqxKcDJNwqbYZLpdiYTigC8KqKNIKxV1vqfVAu8HThvYjf5j5X7TdUCbIkNbevS7hTV9l6Ub1BrwmnpQnfu8W0-jzPmzBM_qkKf8Fo1F58XvxKDux2OUd3Pl3Qjnywwbmco3Kia9HLpO2O6J0b32OoN0NZMu19rZMFW61tN1ulKPpsA2dgRKKFSssZ7CgmpELEns4EGjVLJ-55FP70tM0xCKsaMuchywwtUggNg9djaNPTqfbRxZ0PkQ9ptefDAXz28HuHeCjqWbarIZhgpjgmdI5eBF61r9ciQfC-mOxleXCLsn6j7RfQGUpotduze_yzV5l-DVVll8E7We3H9yHYVpi7o1jQFvnGz9WohLIQVhy6mpR2RWvjUn1kdmTo2Xnwi97WLw2f1DnWrJ0r-6M0xwOhzl1Zza-J12W160dFWBpAV49UTF4tAkvNEOg2qEoEhl6oWoHHK26h5H70BGX1lPsqWkdVWzDZavjtNzt7ME_zyWZtjc1PEd8BGb9D7ZS26BdnuDyaJTJbqWSkjihGFLYSKNahM3_CWRiS-KidReC3jqZTEeeUhZK8je8r_5yrz4UiaU1ph4UL3e0TX-3wEsjL-_wstuHaD6FkHI5IbqwGMrA2hTervkVwKnj4TbFYuwbadyULuCEWcGWL30PI75Od5vUlxdsV26VRV2PBFNbMS39QWLKh4pOBCKzeyL7IVlIcTrXzV6ZZ2IKgqK11UPuOHnNhOxh9jig1r3NXBL93Ob7J_bFT4VutbfMHIaCukAfzYESuYZ77FaSc1pROyDKqYDopx7vGhZhOgFjtwSCDeq5v9bcUUWKUcSc7j6RPo52Kid05I3EvKVXDT7FI-ph7c1z8WuXC9zUo9KqkqvyyLrCKQcNPBt1ESgRIaXXwo7rOPwEfBAVyWP3D-6N4t5uRQsVFaYsRv-UJZ89FzDbEU6tATOr5tqu5OCQmDK4UVjIIqk3nuxIJbJbo3HWhmKN2pn_1p0DtRmB9t9uLEOt_0VKR3fkfBaslobc_nUxqeEf7AHii1f6TKeDcysS-BDreOA6Rd6eWsaSOqNTFRVzXhh7nJa9cFY6cjW8rx2j3e4FePbEhy8lXmZE3r5Wkargv78TEciUSBwWo1EaI2kSykrQy6We_hlEEXhDMde3AF4J-V30nMNXqBBVfb0eAL49FcgWddbvJ9zV9G9M9AN6Ig-_45GqJuvf5tJQu9DbcDrIMpj2bO9qh7LYA-G019PdmjpuRX6Q1ZgxhMzsPYMP7sSINocXzYQ9dYcO3DaDS5DurUMiykUKDpawUbqQuDIoqYKrx47vCyfSOkOjx9Sgrrk7XEYsc9QaA7bvb1yRjfx3m5QWhI71jMS3Pb208fkw_y1xEgvX200FgbP6o"
+                    alt="постер фильма">
+                <div>
+                    <iframe 
+                        src="https://www.youtube.com/embed/6F9RJBKTEUo" 
+                        width="300"
+                        height="190"
+                        frameborder="0"
+                        allow="accelerometer autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen
+                        />
+                    </iframe>
+                    <div>
+                        <span>18 апреля 2025</span>
+                    </div>
+                </div> 
+                <blockquote>
+                    "Они говорили, что у неё не получится. Но она танцевала так, будто гравитация —<br>
+                    это всего лишь дурная привычка вселенной"
+                    <p><cite>—Критик Анна Вольская</cite></p>
+                </blockquote>              
+            </figure>
+
+            <form>
+                <details>
+                    <summary>Оценить</summary>
+                    <div>
+
+                        <legend>Ваша оценка фильму</legend>
+                        <!-- Не знаю,возможно нужно другие id делать для нового фильма,хз. Ну или это другой <article> и мы смотрим на это по-другому -->
+                        <input type="radio" id="one_point" name="rating" value="1">
+                        <label for="one_point">1</label>
+
+                        <input type="radio" id="two_point" name="rating" value="2">
+                        <label for="two_point">2</label>
+
+                        <input type="radio" id="three_point" name="rating" value="3">
+                        <label for="three_point">3</label>
+
+                        <input type="radio" id="four_point" name="rating" value="4">
+                        <label for="four_point">4</label>
+
+                        <input type="radio" id="five_point" name="rating" value="5">
+                        <label for="five_point">5</label>
+
+                        <input type="radio" id="six_point" name="rating" value="6">
+                        <label for="six_point">6</label>
+
+                        <input type="radio" id="seven_point" name="rating" value="7">
+                        <label for="seven_point">7</label>
+
+                        <input type="radio" id="eight_point" name="rating" value="8">
+                        <label for="eight_point">8</label>
+
+                        <input type="radio" id="nine_point" name="rating" value="9">
+                        <label for="nine_point">9</label>
+
+                        <input type="radio" id="ten_point" name="rating" value="10">
+                        <label for="ten_point">10</label>
+
+                    </div>
+                    <div>
+                        <p for="comment">Ваш комментарий</p>
+                        <textarea id="comment" name="comment" placeholder="Поделитесь впечатлениями"></textarea>
+                        <button type="submit">Отправить</button>
+                    </div>
+                </details>
+            </form>
+            
+            <section>
+                <div>
+
+                    <p>Рейтинг<p>
+
+                    <div class="clean-rating">
+                        <span class="score">7.2</span>
+                        <span class="scale">/10</span>
+                    </div>
+                    
+                    <style>
+                        .clean-rating {
+                            display: inline-flex;
+                            align-items: baseline;
+                            gap: 2px;
+                        }
+                        
+                        .score {
+                            font-size: 1.2em;
+                            font-weight: bold;
+                            color: #28a745;
+                        }
+                        
+                        .scale {
+                            font-size: 0.9em;
+                            color: #6c757d;
+                        }
+                    </style>
+                </div>
+            </section>
+            
+            <div>
+                <h4>Отзывы:</h4>
+
+                <blockquote>
+                    "Бегает и прыгает"
+                    <cite>Анастасия, ⭐ 10/10</cite>
+                </blockquote>
+
+                <blockquote>
+                    "Не реалистино!"
+                    <cite>Владимир Чалов, ⭐ 2/10</cite>
+                </blockquote>
+                
+                <blockquote>
+                    "Фильм пиздатый"
+                    <cite>Петя Пупкин, ⭐ 9,5/10</cite>
+                </blockquote>
+            </div>
+            
+        </article>
+
+        <article id="a_working_man">
+            <header>
+                    <h3>Мастер (2025)</h3>
+                    <p>A Working Man 18+</p>
+                    <time datetime="2025-03-28"></time>
+            </header>
+            <figure>
+                <img src="https://kinopoisk-ru.clstorage.net/R2e9Y8350/d214526uYEv3/_N4qljSb88LDZrJcOhu_UNziliwwxm7LfEKsaMCeExLT-gNLFtLomxNmznfYiMTQzbJrK1OkJoiE21fv2qUq0vgLvodQHrbHArInTV8eu9fP8NV640TMrT7Bf81E2hK3Rv-XTzY3fK6iguoxvvmRg2vVmo0HoJOI8gqT6uojWxVvP5nHU2vjsSSlwK3Kiz6WHxNW-AAlDq49g4x8pslGByTtVywHZq9uBnGLkw-vQXP7ldsfJBOz6kErwhl68pqlPs7ZFZBbk0E1BkJtinv8V27B1cpAd2wPDfCPDVc4RvcW71autJbcvUQAyQEPHsHBWsVb3SeiIyjRqBI6SZP4V21ea3QSCZHTtpQRfms4v5S-cAQZU5UOnP_yvI82KUVVVX7kPuZGrL5V8rvgvd7TsVplC2ymk3Na43vA6rgwGTa9Lgl3UDiC8YXXgK5YmI72j2BFKYIVDb88Id6NNdo2hqdNx94FxqzOVxDqQU9tsQO4hbhPF5Kgu6AJoos6UumUbg7ZBFCrQgOHdlFeeInd1kwz9lqSlA3OrbMP7nd4RTV0_PWclJVMPqXBSwFvzXMxebYrX3YQU5nhuCErerJoVr2suDfSK6KjxuUSX6j633T_gZYo0Revbr_yvf7FCOSV132UnJb0_362MvgyHC4Cc8vlmj5H8qFaIaqRKugguHRuDms0krsBEoW30t-ZG212_HFluIJmbM4_sO3ftZs0xXU_Re8Vx5_vlMBaM24tIxNY1wnf16NBu4LrU2gIIPglXBwr51CZo2EkBmI8qsrO9M8i98ojlb-dL-KsD7dp1nV3PeSPdDXPD0ZQS9KcnUGzyFXojFWzc-mzqgFomhAatO2M-ofTC9GzdeYyD6k5LDVvQEXqEsed_IziTz9HW0R3pN_V7peWvoyW8IgQ7Y7icujUSp4E42H6orsiKhqwCsfNzpi2QygRMZVGMszLKNwm3mCkSfDG_p1vEU1PVchlZnQdpY6H97y8REOJ4q0dEVPpdao_5kHz-PCbYMrL0iolPs6rFXMYgfCEFqE-GOmOhFwSpvogVr9OPtOOP7X4NMfX_lYfNcUdfmax2iBcDuBB-GcpztQSMJhBK5P4aoKLx51vKVcTKaNTxxdjTBlq7lV_AIUb0-WvPiySTk7XybR31x4GHmQW70xkUppSHB7TUKnXaVxk89LagJuz-hsACwb9zko2kUhwkocWAr1b-f2W_NKHu5BXP28N0W4Ox8vWx-ct9d90Zx1-5NDr0m0vMTI7pOn_BNCwuxKLAtsYUymH_v1bhzLp0WEG54HMKhvN9nyTVjphpo1-_GPcjwaptkXXTCSOVieujFSTu_D8rdGwe6eqPjeRYVrAmXLbGPAqZ70eCoWB6ACCh8UCH4v7HpdNkfVLkIaun4-RnFxliRfWVA1VfWYHjDyXwIlRffzxQ7pm2qwnU-FawBuSm2gRShRO33qUMBpjcsT0sN_pyX5mL2CUGNHEfa-O4Zy-pwvlZNcsVj11xZz8xJLbgu2vQlPoRknf9rNwynE70Tj48SvnPW8o99MIQzMnZwF--Atepwzjxciixk-unyNPXMT59Bfkv5fNVec_z3YTGmNPrcCRqteqrSRRIihBS0AoCsLqZn_ce3fiK1Ly9rRg7ms7D4bdopcIIYS93QzAvW4VCZaEp0_VXqW27S418rgDHe6Tg5oGOGwUEHNYcslTS9jiqtUvXnn10TvS4qdGMp6byPxFTVGlqpBEHZyckrxM5gomdJS_9M0GN29eNLGL8l3P4zKY1Vp_5fMTKJGaUOpo0puWb81oN_Er4MD3Z5DcqAj-5k4iJ-jwZB6fDtF_XBTq5AbF7OeuRFX-DgbAaHI8fsBBaVW7rsfxYrpR2BDretEIVV8u-TZASUHhF-Ux7bs7jZaeQ6UJkfR8zozBvX9mqQZnhTwmzsSFfJyHY2jiv50ywKjGa21XocN78QsCq9kSGISf3KoVsFux4xfkg0-Iua2GHDC1qlDXH-9dkV--JpumhqaM1652RO6dtADYUo3sEZO61gmM5bMjC5H4EltqAKukbK6qN_PpQ9KGJ1F-Kdq-FZ7B5Goj1H_9flD9HuXLpQTGrUUfJlZNrwah2_E8LwGzepeYXddRIzvROSBZWoN69t9NWYfBWqETVxXCjnjITITtIPXpQ5ZtTu6hzA72yTYmlf42zZYmTD2WIqmALG-yoNvHuF83UKOZM_miOtoTaacvPPtlwBniwbcn437oG_w2fzPGSNBEnB__0a8ch2uHVNa_1DyG1v-uhjCrkp2_o6A5tznt9hKg2KK4IIs60HpXT05ZxqFaYdGWJcBu-Qs-tw1SpwhC9M8uvEM-fHQKVXcEv_TOF0V9f2dBmaJdz9ChyBVrXTYz0xijK8F66KCp5sw_WvYim2MAV8YSrotZDoe-4FYaY9etrX8Rrq10iHS1RW3kLtZnPt43YGuirywCsLgl6WyXwxCIcSnSOCkAujXNXCrkMtlx0xdFEy_Ii67G7qNkKfDXHt6f8Z2MRuk2FMcu1VxEZOzNBhDIwt3uwsFpV9kv1fGwm9K5oNipMCnlngyJl4CJAoK3RiKOy1lP1U5zhiggV79_7GCdzRSLdESXfdf_B6eOzHTgmYPdP-JwSbWaTDZCkNuTChAaOkJpl4zvqfaAq8ERppXgbKgZb6atUHXrQ5aOn5xx3f-lOBcXpI8nPQXnrWx34TnQz8yhs_vlK2wUc6FKkSsiKsuiKffPbSq0YMkDs9WV8e5pe04VrMIXi4KEjTz_os1PRYlG16YNlI20FQ_-pyOJ0D9MwwFYJtsdFdJS-PPboMiY8dvmvK6JFCAZYNMGFmItWsqsRi7yNloz1a6_TnEcD2V7h_UF7DT-1YXNfpaRaMKf_6NiuferfxTTEpuxycF4q8A55t0O6fZgWxPQdWVBLGjJ_qUvcARoEFbPrcxjrxzH6hS2dF2FzubkTwwkMXlCrc9i8Gi0OE72kyNow" alt="Постер к фильму">
+                <time datetime="2025-03-28"></time>
+                <div>
+
+                    <iframe
+                    src="https://www.youtube.com/embed/zTbgNC42Ops"
+                    width="300"
+                    height="190"
+                    frameborder="0"
+                    allow="accelerometer autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    />
+                </iframe>
+                <div>
+                    <span>28 марта 2025</span>
+                </div>
+            </div>
+            <blockquote>
+                "Иногда героем быть не нужно — достаточно просто оставаться человеком в бесчеловечной системе"
+                <p><cite>—Кинокритик Майкл Шонов</cite></p>
+            </blockquote>
+            </figure>
+            
+            <form>
+                <details>
+                    <summary>Оценить</summary>
+                    <div>
+
+                        <legend>Ваша оценка фильму</legend>
+
+                        <input type="radio" id="one_point" name="rating" value="1">
+                        <label for="one_point">1</label>
+                        <input type="radio" id="two_point" name="rating" value="2">
+                        <label for="two_point">2</label>
+
+                        <input type="radio" id="three_point" name="rating" value="3">
+                        <label for="three_point">3</label>
+
+                        <input type="radio" id="four_point" name="rating" value="4">
+                        <label for="four_point">4</label>
+
+                        <input type="radio" id="five_point" name="rating" value="5">
+                        <label for="five_point">5</label>
+
+                        <input type="radio" id="six_point" name="rating" value="6">
+                        <label for="six_point">6</label>
+
+                        <input type="radio" id="seven_point" name="rating" value="7">
+                        <label for="seven_point">7</label>
+
+                        <input type="radio" id="eight_point" name="rating" value="8">
+                        <label for="eight_point">8</label>
+
+                        <input type="radio" id="nine_point" name="rating" value="9">
+                        <label for="nine_point">9</label>
+
+                        <input type="radio" id="ten_point" name="rating" value="10">
+                        <label for="ten_point">10</label>
+                    </div>
+
+                    <div>
+                        <p>Ваш комментарий</p>
+                        <textarea name="comment" placeholder="Поделитесь впечатлениями"></textarea>
+                        <button type="submit">Отправить</button>
+                    </div>
+                </details>
+            </form>
+
+            <section>
+                <div>
+                    <p>Рейтинг</p>
+
+                    <div class="clean-rating">
+                        <span class="score">7.0</span>
+                        <span class="scale">/10</span>
+                    </div>
+
+                    <style>
+                        .clean-rating {
+                            display: inline-flex;
+                            align-items: baseline;
+                            gap: 2px;
+                        }
+
+                        .score {
+                            font-size: 1.2em;
+                            font-weight: bold;
+                            color: #28a745;
+                        }
+
+                        .scale {
+                            font-size: 0.9em;
+                            color: #6c757d;
+                        }
+                    </style>
+                </div>
+            </section>     
+            
+            <div>
+
+                <blockquote>
+                    "Просто бомба!"
+                    <cite>Георгий Маслов, ⭐ 8,533/10</cite>
+                </blockquote>
+                
+                <blockquote>
+                    "Было очень волнительно"
+                    <cite>Апполинария, ⭐ 8/10</cite>
+                </blockquote>
+
+                <blockquote>
+                    "Были мужики - не вы..."
+                    <cite>Галина Прокопенко, ⭐ 8/10</cite>
+                </blockquote>
+            </div>
+
+        </article>
+
+    </section>
+
+    <section id="books">
+        <h2>Книги</h2>
+
+        <!--Вставить названия книг и сделать навигацию по ним-->
+        <p>Всегда можно найти вчтото в книге</p>
+        <!-- <nav>
+            <ul>
+                <li><a href="#the_last_wish">Последнее желание (The Last Wish)</a></li>
+                <li><a href="#we">Мы</a></li>
+                <li><a href="#gargantua_and_pantagruel">Гаргантюа и Пантагрюэль</a></li>
+            </ul>
+        </nav> -->
+        
+        <!-- <form>
+            <details>
+                <summary>Посмотреть подборку</summary>
+                <div>
+                    <table>
+                        <caption>Выбор нашей редакции</caption>
+                    </table>
+                </div>
+            </details>
+        </form> -->
+        <!-- понемногу изучю CSS,полностью его не касаясь -->
+        
+
+    <table id="books">
+        <tbody>
+            <tr>
+                <td>
+                    <article id="the_last_wish">
+                        <div>
+                            <header>
+                                <h3><center><a href="https://books.yandex.ru/books/LZRQId0e">Последнее желание</a></center></h3>   
+                            </header>
+                        </div>
+                        
+                        <figure>
+                            <a href="https://books.yandex.ru/books/LZRQId0e" title="Последнее желание">
+                            <img 
+                            src="https://api.bookmate.ru/assets/books-covers/70/a3/LZRQId0e-ipad.jpeg?image_hash=db598bbf0af29116abb98061fe1f90fd"
+                            alt="Обложка Последнего желания"
+
+                            width="300"
+                            height="460"
+                            />
+                        </a>
+                        <div>
+                            <cite><a href="https://books.yandex.ru/authors/rZvohqqN">Анджей Сапковский</a></cite>    
+                        </div>
+                        </figure>
+                    </article>
+                </td>
+                <td>
+                    <article id="we">
+                        <div>
+                            <header>
+                                <h3><center><a href="https://books.yandex.ru/books/INX13int">Мы</a></center></h3>
+                            </header>
+                        </div>
+                        
+                        <figure>
+                            <a href="https://books.yandex.ru/books/INX13int" title="Мы">
+                            <img 
+                            src="https://api.bookmate.ru/assets/books-covers/5f/5a/INX13int-ipad.png?image_hash=eb7f18bb789b83027432aa4d4e3baa55"
+                            alt="Обложка антиутопии Мы"
+                            width="300"
+                            height="460"
+                            />
+                            </a>
+                            <div>
+                                <cite><a href="https://books.yandex.ru/authors/ofXZqrup">Евгений Замятин</a></cite>
+                            </div>
+                        </figure>
+                    </article>
+                </td>
+                <td><article id="we">
+                    <div>
+                        <header>
+                            <h3><center><a href="https://books.yandex.ru/books/HF8NB9lK">Гаргантюа и Пантагрюэль (18+)</a></center></h3>
+                        </header>
+                    </div>
+                    
+                    <figure>
+                        <a href="https://books.yandex.ru/books/HF8NB9lK" title="Гаргантюа и Пантагрюэль (18+)">
+                        <img 
+                        src="https://api.bookmate.ru/assets/books-covers/0f/f2/HF8NB9lK-ipad.png?image_hash=8b486b2032fe835c6151a9bc1bdfa99e"
+                        alt="Обложка Гаргантюа и Пантагрюэль"
+                        width="300"
+                        height="460"
+                        />
+                        </a>
+                        <div>
+                            <cite><a href="https://books.yandex.ru/authors/EctPoiYW">Франсуа Рабле</a></cite>
+                        </div>
+                    </figure>
+                </article></td>
+            </tr>
+        </tbody>
+        <!-- <tbody>
+           <tr>
+                <td id="block_center">
+                    <div class="block_center">
+                        <ul>
+                            <li>
+                                <h2>Последнее желание</h2>
+                            </li>
+                            <li>
+                                <h2>Мы</h2>
+                            </li>
+                            <li>
+                                <h2>Гаргантюа и Пантагрюэль</h2>
+                                <div>
+                                    Ф.Рабле
+                                </div>
+                            </li>
+                        </ul> 
+                    </div>
+                </td>
+           </tr> 
+        </tbody>-->
+    </table> 
+
+        <!-- <article id="the_last_wish">
+            <div>
+                <header>
+                    <h3>Последнее желание. Анджей Сапковский</h3>
+                    <p>The last Wish</p>
+                </header>
+            </div>
+            
+            <figure>
+                <img 
+                    src="https://api.bookmate.ru/assets/books-covers/70/a3/LZRQId0e-ipad.jpeg?image_hash=db598bbf0af29116abb98061fe1f90fd"
+                    alt="Обложка Последнего желания"
+                    width="300"
+                    />
+            </figure>
+        </article> -->
+    </section>
+
+    <section id="new_restaurant">
+        <h2>Встречайте новый Ресторан на улице Патриотов!</h2>
+        <!--Описать новый ресторан-->
+        <p></p>
+        <!--Сделать меню-таблицу новогоднего меню-->
+        <article>
+
+        </article>
+    </section>
+
+    <section id="polis">
+        <h2>Почему трава не зелёная?</h2>
+        <!--Добавить описание опросника с филосовским опросом,открытым концом-->
+        <p>"Дорогой дневник, мне не описать словами какой ужас мне пришлось пережить.."</p>
+        <p>Такие письма от наших читателей ежедневно поступают на нашу почту.Это может произойти(и зачастую неизбежно,
+            конечно, пиоисходит)<br>
+            в жизни каждого из нас. Мы рады быть Вашим безопасным пространством и с глубоким пониманием относимся к
+            письмам.<br>
+            Но нельзя отрицать,что так или иначе нам всем приходится делать выбор,и что даже в лучшие времена он не
+            бывает простым</p>
+
+        <article>
+            <form>
+                <legend>Сколько ты зарабатываешь?</legend>
+
+                <fieldset>
+                    <input type="radio" name="question_one" id="question_one" value="question_one" />
+                    <label for="question_one">600 рублей</label>
+
+                    <input type="radio" name="questions_one" id="question_one" value="question_one" />
+                    <label for="question_one"> 903 рубля</label>
+                </fieldset>
+
+                <legend>Что любишь пить?</legend>
+                <fieldset>
+                    <input type="radio" name="question_two" id="question_two" value="question_two" />
+                    <label for="question_two">Молоко</label>
+                </fieldset>
+            </form>
+        </article>
+    </section>
+
+    <section id="ditties">
+        <h2>Частушки от Болтушки!</h2>
+        <!--Доьавить "Дорогие наши читатели,как всегда благодарим Вас за участие..."-->
+        <p></p>
+
+        <!--Добавить Автора частушки через <b> или <"">-->
+        <article>
+
+        </article>
+    </section>
+
+    <section id="sinyak">
+        <h2>А может повезёт..</h2>
+
+        <p>"Судьба человека - штука непредсказуемая,<br>
+            никто не властвует над ней: ни твой выбор,<br>
+            ни твоя страна и государство,<br>
+            ни даже, наверное, Господь Бог.."</p>
+
+        <article>
+
+        </article>
+    </section>
+
+
+</main>
+
+</html>
