@@ -1,0 +1,23 @@
+.sun_hands_logo {
+    display: flex;
+    justify-content: left;
+    margin-top: 10rem;
+    margin-left: 10rem;
+}
+
+h1 {
+    font-size: 40vw;
+    width: 100vw;
+    height: 100vh;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-weight: 900;
+    color: white;
+    text-shadow: 0 0 30px rgba(255,107,0,0.8);
+  }
+
+  p {
+    
+  }
