@@ -2,9 +2,10 @@
 Мой путь начинается сегодня. Я намерен стать Full Stack-разработчиком и создавать практические проекты, начиная с курса freeCodeCamp.
 
 
-## HTML проекты
-- [Форма опроса](./html-projects/survey-form/build-a-survey-form.html)
-- [Онлайн газета](./html-projects/online_newspaper/online_newspaper_SVETskiy_soyuz.html)
+## Проекты
+- [Форма опроса (HTML)](./html-projects/survey-form/build-a-survey-form.html)
+- [Онлайн газета (HTML)](./html-projects/online_newspaper/online_newspaper_SVETskiy_soyuz.html)
+- [Участие в фестивале](html-css-projects/festival_project_actual)
 
 ## Неделя 2 - HTML (14-23.11.2025)
 - Изучено: 
