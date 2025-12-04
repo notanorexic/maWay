@@ -1,4 +1,4 @@
-.position_img {
+.position {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,14 +6,14 @@
     height: 80vh;
 }
 
-.sun_hands_img {
+.sun_hands {
     max-width:  35vw;
     height: auto;
     margin-left: 15rem;
     transition: transform 0.3s ease;
 }
 
-.sun_hands_img:hover {
+.sun_hands:hover {
     transform: scale(1.05);
     box-shadow: 0 0 30px rgba(255, 140, 0, 0.9),
                 0 0 60px rgba(255, 69, 0, 0.8);
