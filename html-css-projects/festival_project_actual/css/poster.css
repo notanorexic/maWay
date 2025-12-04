@@ -1,9 +1,34 @@
-.sun_hands_logo {
+.position_img {
     display: flex;
-    justify-content: left;
-    margin-top: 10rem;
-    margin-left: 10rem;
+    align-items: center;
+    justify-content: center;
+    gap: 20rem;
+    height: 80vh;
 }
+
+.sun_hands_img {
+    max-width:  35vw;
+    height: auto;
+    margin-left: 15rem;
+    transition: transform 0.3s ease;
+}
+
+.sun_hands_img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 140, 0, 0.9),
+                0 0 60px rgba(255, 69, 0, 0.8);
+    animation: shadowColor 10s infinite alternate;       
+}
+
+@keyframes shadowColor {
+  0%   { box-shadow: 0 0 10rem 0 red; }
+  50%  { box-shadow: 0 0 2rem 0 blue; }
+  100% { box-shadow: 0 0 5rem 0 orange; }
+}
+
+p {
+    flex-grow: 1;
+} 
 
 h1 {
     font-size: 40vw;
@@ -16,8 +41,4 @@ h1 {
     font-weight: 900;
     color: white;
     text-shadow: 0 0 30px rgba(255,107,0,0.8);
-  }
-
-  p {
-    
   }
