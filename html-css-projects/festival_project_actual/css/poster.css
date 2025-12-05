@@ -1,6 +1,7 @@
 .position {
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
     height: 80vh;
     gap: 0;
@@ -63,7 +64,6 @@ hr {
     box-shadow: 0 0 30px rgba(255,107,0,0.8);
     transform: skewX(-20deg);
     width: 100%;
-    cursor: pointer;
 }
 
 .palka_one,
@@ -132,22 +132,69 @@ span {
     text-transform: uppercase;
     /* Лёгкая тень вокруг букв, чтобы края не терялись на светлом фоне */
     filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.6));
-  }
+}
+
+.rave_entry_form_container {
+    margin: 0 auto 5em auto;
+    max-width: 30%;
+    padding: 5em;
+    border: 1px solid;
+    border-radius: 8px;
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
 
 input,
 select {
     width: 100%;
-
+    padding: 1em;
+    margin-bottom: 3em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.sick {
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.ages { 
+    display: block;
+    width: 100px;
+    padding: 1em;
+    margin-bottom: 3em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.sex_container,
+.sick_container {
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    gap: 1.5em;
+    margin-top: 1em;
+    border: none;
 }
 
-.rave_entry_form_container {
-    margin: 0 auto;
-    width: 800px;
-    max-width: 40%;
+.sex_option,
+.sick_option {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.sex_container input[type="radio"],
+.sick_container input[type="radio"] {
+    margin: 0.2em;
+    width: auto;
+}
+
+.sex_container label,
+.sick_container label {
+    margin: 0;
 }

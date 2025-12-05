@@ -70,7 +70,7 @@
                 placeholder="Введите ваше имя"
                 required
                 />
-            <label for="email">Email:</label>
+            <label for="email">Email-адрес для обратной связи:</label>
             <input
                 id="email"
                 type="email"
@@ -78,8 +78,19 @@
                 placeholder="inhissightrave@gmail.com"
                 required
                 />
+            <!-- для некоторых категорий можно добавить
+                  ещё одно всплывающее меню или что-то такое для уточнения,
+                  но мне не хочется делать это сейчас -->
+            <label for="position">Ваш статус:</label>      
+            <select id="position" name="position" required>
+                <option value="member">Участник</option>
+                <option value="volunteer">Волонтёр</option>
+                <option value="staff">Персонал</option>
+            </select>
+            <!-- TODO: добавить ограничение по симв -->
             <label for="age">Сколько вам лет?</label>
             <input
+                 class="ages"
                 type="number"
                 id="age"
                 name="age"
@@ -87,53 +98,48 @@
                 max="70"
                 required
                 />
-            <!-- для некоторых категорий можно добавить
-              ещё одно всплывающее меню или что-то такое для уточнения,
-              но мне не хочется делать это сейчас -->
-            <label for="position">Ваш статус:</label>      
-            <select id="position" name="position" required>
-                <option value="member">Участник</option>
-                <option value="volunteer">Волонтёр</option>
-                <option value="staff">Персонал</option>
-            </select>
             <fieldset class="sex_container">
-                <div>
                 <legend>Пол:</legend>
+                <div class="sex_option">
                     <input
                         type="radio"
                         name="sex"
-                        id="sex"
+                        id="sex_female"
                         value="female"
                         required
                         checked
                         />
-                    <label for="sex">Женский</label>
+                    <label for="sex_female">Женский</label>
+                </div>
+                <div class="sex_option">
                     <input
                         type="radio"
                         name="sex"
-                        id="sex"
+                        id="sex_male"
                         value="male"
                         required
                         />
-                    <label for="sex">Мужской</label>
+                    <label for="sex_male">Мужской</label>
                 </div>
             </fieldset>
-            <fieldset class="sick">
-                <div>
-                    <legend>Имеются ли у вас медицинские противопоказания?</legend>
+            <fieldset class="sick_container">
+                <legend>Имеются ли у вас медицинские противопоказания?</legend>
+                <div class="sick_option">
                     <input
                         type="radio"
                         name="disease"
-                        id="disease"
+                        id="disease_yes"
                         value="yes"
                         required
                         checked
                         />
                     <label for="disease">Да</label>
+                </div>
+                <div class="sick_option">
                     <input
                         type="radio"
                         name="disease"
-                        id="disease"
+                        id="disease_no"
                         value="no"
                         required
                         />
