@@ -108,7 +108,7 @@ span {
     margin: 1rem auto;
 }
 
-.footer_text {
+.cool_text {
     /* Во всю ширину без горизонтального скролла */
     font-size: clamp(10rem, 35vw, 39vw);
     width: 100%;
@@ -133,3 +133,21 @@ span {
     /* Лёгкая тень вокруг букв, чтобы края не терялись на светлом фоне */
     filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.6));
   }
+
+input,
+select {
+    width: 100%;
+
+}
+
+.sick {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.rave_entry_form_container {
+    margin: 0 auto;
+    width: 800px;
+    max-width: 40%;
+}

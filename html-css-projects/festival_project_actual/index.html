@@ -4,34 +4,35 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
-    <title>Red UnderSun</title>
+    <title>In His Sight Rave</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/poster.css" />
 </head>
 
 <body>
+    <!-- Только сейчас понял,что это ВСЁ в header'е -->
     <header class="position">
         <img class="sun_hands" src="/images/sun_hands.jpg" alt="" />
         <div class="position_text">
-            <p>Добро пожаловать на <span>Red UnderSun!</span> </p>
+            <p>Добро пожаловать на <span>In His Sight!</span> </p>
             <p>Никогда ещё в истории нашего фестиваля не было такого количества гостей и
                 возможностей!</p>
             <p>Выбирайте своих партнёров на эту ночь или вспомните зачем вы здесь - доверьтесь Солнцу!</p>
         <div class="palki">
             <div class="palka_container">
-                <a href="/track1" class="palka_link">
+                <a href="/track1" class="palka_link" target="_blank">
                     <hr class="palka_one">
                 </a>
                 <span class="palka_description">Трек и исполнитель один</span>
             </div>
             <div class="palka_container">
-                <a href="/track2" class="palka_link">
+                <a href="/track2" class="palka_link" target="_blank">
                     <hr class="palka_two">
                 </a>
                 <span class="palka_description">Трек и исполнитель два</span>
             </div>
             <div class="palka_container">
-                <a href="/track3" class="palka_link">
+                <a href="/track3" class="palka_link" target="_blank">
                     <hr class="palka_three">
                 </a>
                 <span class="palka_description">Трек</span>
@@ -43,13 +44,103 @@
                 </p>
             </div>    
         </div>
+        <div>
+            <nav>
+                <a href="#rave_entry_form">Принять участие</a>
+            </nav>
+        </div>
     </header>
-
     <main class="">
 
     </main>
     <div>
-        <p class="footer_text">RAVE</p>
+        <p class="cool_text">RAVE</p>
+    </div>
+    <div class="rave_entry_form_container">
+        <h1>
+            Форма заявки<br>
+            <span>In His Sight 2025!</span>
+        </h1>
+        <form id="rave_entry_form">
+            <label for="name">Ваше имя:</label>
+            <input 
+                id="name" 
+                type="text"
+                name="name"
+                placeholder="Введите ваше имя"
+                required
+                />
+            <label for="email">Email:</label>
+            <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="inhissightrave@gmail.com"
+                required
+                />
+            <label for="age">Сколько вам лет?</label>
+            <input
+                type="number"
+                id="age"
+                name="age"
+                min="16"
+                max="70"
+                required
+                />
+            <!-- для некоторых категорий можно добавить
+              ещё одно всплывающее меню или что-то такое для уточнения,
+              но мне не хочется делать это сейчас -->
+            <label for="position">Ваш статус:</label>      
+            <select id="position" name="position" required>
+                <option value="member">Участник</option>
+                <option value="volunteer">Волонтёр</option>
+                <option value="staff">Персонал</option>
+            </select>
+            <fieldset class="sex_container">
+                <div>
+                <legend>Пол:</legend>
+                    <input
+                        type="radio"
+                        name="sex"
+                        id="sex"
+                        value="female"
+                        required
+                        checked
+                        />
+                    <label for="sex">Женский</label>
+                    <input
+                        type="radio"
+                        name="sex"
+                        id="sex"
+                        value="male"
+                        required
+                        />
+                    <label for="sex">Мужской</label>
+                </div>
+            </fieldset>
+            <fieldset class="sick">
+                <div>
+                    <legend>Имеются ли у вас медицинские противопоказания?</legend>
+                    <input
+                        type="radio"
+                        name="disease"
+                        id="disease"
+                        value="yes"
+                        required
+                        checked
+                        />
+                    <label for="disease">Да</label>
+                    <input
+                        type="radio"
+                        name="disease"
+                        id="disease"
+                        value="no"
+                        required
+                        />
+                    <label for="disease">Нет</label>
+                </div>
+            </fieldset>
+        </form>
     </div>
 </body>
 
