@@ -138,16 +138,20 @@ span {
     margin: 0 auto 5em auto;
     max-width: 30%;
     padding: 5em;
-    border: 1px solid;
+    border: 2px solid;
     border-radius: 8px;
-    border-color: rgba(0, 0, 0, 0.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: rgba(255, 107, 53, 0.6);
+    background-color: rgba(26, 26, 26, 0.85);
+    box-shadow: 0 4px 16px rgba(255, 107, 53, 0.3),
+                0 0 30px rgba(255, 69, 0, 0.2);
 }
 
 h1 {
     text-align: center;
     line-height: 1.35em;
     margin-bottom: 3em;
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
 }
 
 .icon {
@@ -172,9 +176,12 @@ select {
     width: 100%;
     padding: 1em;
     margin-bottom: 3em;
-    border: 1px solid #ccc;
+    border: 2px solid rgba(255, 107, 53, 0.4);
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #1a1a1a;
+    transition: all 0.3s ease;
 }
 
 :is(input[type="text"],
@@ -182,8 +189,11 @@ input[type="email"],
 input[type="number"],
 select):focus {
     appearance: none;
-    border: 2px solid #007bff;
+    border: 2px solid #ff6b35;
     outline: none;
+    box-shadow: 0 0 8px rgba(255, 107, 53, 0.5),
+                0 0 15px rgba(255, 69, 0, 0.3);
+    background-color: rgba(255, 255, 255, 1);
 } 
 
 /* :is(input, select):active {
@@ -201,6 +211,9 @@ select):focus {
 label {
     display: block;
     margin-bottom: 0.5em;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .ages { 
@@ -208,8 +221,11 @@ label {
     width: 100px;
     padding: 1em;
     margin-bottom: 3em;
-    border: 1px solid #ccc;
+    border: 2px solid rgba(255, 107, 53, 0.4);
     border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #1a1a1a;
+    transition: all 0.3s ease;
 }
 
 .sex_container,
@@ -219,6 +235,14 @@ label {
     gap: 1.5em;
     margin-top: 1em;
     border: none;
+}
+
+.sex_container legend,
+.sick_container legend {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0.5em;
 }
 
 .sex_option,
@@ -232,9 +256,46 @@ label {
 .sick_container input[type="radio"] {
     margin: 0.2em;
     width: auto;
+    accent-color: #ff6b35;
+    cursor: pointer;
 }
 
 .sex_container label,
 .sick_container label {
     margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.sex_container label:hover,
+.sick_container label:hover {
+    color: rgba(255, 107, 53, 1);
+}
+
+button {
+    width: 100%;
+    margin: 3em auto 0 auto;
+    padding: 0.8em;
+    color: #ff6b35;
+    background-color: #1a1a1a;
+    border: 2px solid #ff6b35;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    color: #1a1a1a;
+    background-color: #ff6b35;
+    border-color: #ff4500;
+    box-shadow: 0 4px 16px rgba(255, 107, 53, 0.6),
+                0 0 25px rgba(255, 69, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(255, 107, 53, 0.4);
 }

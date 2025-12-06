@@ -92,11 +92,13 @@
             <label for="age">Сколько вам лет?</label>
             <input
                  class="ages"
-                type="number"
+                type="text"
                 id="age"
                 name="age"
-                min="16"
-                max="100"
+                inputmode="numeric"
+                pattern="(1[6-9]|[2-9][0-9]|100)"
+                maxlength="3"
+                placeholder="42"
                 required
                 />
             <fieldset class="sex_container">
@@ -134,7 +136,7 @@
                         required
                         checked
                         />
-                    <label for="disease">Да</label>
+                    <label for="disease_yes">Да</label>
                 </div>
                 <div class="sick_option">
                     <input
@@ -144,9 +146,10 @@
                         value="no"
                         required
                         />
-                    <label for="disease">Нет</label>
+                    <label for="disease_no">Нет</label>
                 </div>
             </fieldset>
+            <button type="submit">Отправить форму</button>
         </form>
     </div>
 </body>
