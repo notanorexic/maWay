@@ -177,7 +177,16 @@ select {
     box-sizing: border-box;
 }
 
-:is(input, select):active {
+:is(input[type="text"],
+input[type="email"],
+input[type="number"],
+select):focus {
+    appearance: none;
+    border: 2px solid #007bff;
+    outline: none;
+} 
+
+/* :is(input, select):active {
     border-color: blue;
 }
 
@@ -186,8 +195,8 @@ select {
 }
 
 :is(input, select):valid {
-    border-color: green;
-}
+    border-color: green; 
+}*/
 
 label {
     display: block;
