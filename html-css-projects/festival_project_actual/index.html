@@ -59,15 +59,16 @@
     <div class="rave_entry_form_container">
         <h1>
             Форма заявки<br>
-            <span>In His Sight 2025!</span>
+            <span class="icon">In His Sight 2025!</span>
         </h1>
         <form id="rave_entry_form">
-            <label for="name">Ваше имя:</label>
+            <label for="name">Ваше ФИО:</label>
+            <!-- тут можно вставить вот такое,но мне пока gjt,fnm - pattern="([A-Za-z\s\-]{3,50}|[А-Яа-яЁё\s\-]{3,50})" -->
             <input 
                 id="name" 
                 type="text"
-                name="name"
-                placeholder="Введите ваше имя"
+                name="fullname"
+                placeholder="Введите ваше ФИО"
                 required
                 />
             <label for="email">Email-адрес для обратной связи:</label>
