@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" inicial-scale="1.0" />
+    <title>BDSM</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <div class="form-container">
+        <form>
+            <h2>Практика</h2>
+            <fieldset class="form-group">
+                <label>First Name:
+                    <input
+                    type="text"
+                    name="first_name"
+                    id="first_name"
+                    required
+                    />
+                </label>
+                <label>Last Name:
+                    <input
+                    type="text"
+                    name="last_name"
+                    id="last_name"
+                    required
+                    />
+                </label>
+                <label>Age:
+                    <input
+                    type="text"
+                    name="age"
+                    id="age"
+                    inputmode="numeric"
+                    maxlength="3"
+                    required
+                    />
+                </label>
+            </fieldset>
+            <fieldset class="fcolor">
+                <legend>Ваш любимый цвет:</legend>
+                <select name="fcolor" id="fcolor" required>
+                    <option value="red">Красный</option>
+                    <option value="blue">Синий</option>
+                    <option value="brown">Коричневый</option>
+                    <option value="grey">Серый</option>
+                    <option value="orange">Оранжевый</option>
+                </select>
+            </fieldset>
+            <fieldset class="radio-group">
+                <legend>Вы когда-нибудь находились одни в лесу?</legend>
+                <label>
+                    <input
+                        type="radio"
+                        id="yes"
+                        name="sogl"
+                        required
+                        />
+                    Да
+                </label>
+                <label>
+                    <input
+                        type="radio"
+                        id="no"
+                        name="sogl"
+                        required
+                        />
+                    Нет
+                </label>
+            </fieldset>
+            <div class="">
+                <label for="comm">Расскажите о себе:<textarea type="text" name="comm" id="comm" required ></textarea></label>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</body>
+
+</html>

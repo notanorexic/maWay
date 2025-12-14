@@ -194,19 +194,7 @@ select):focus {
     box-shadow: 0 0 8px rgba(255, 107, 53, 0.5),
                 0 0 15px rgba(255, 69, 0, 0.3);
     background-color: rgba(255, 255, 255, 1);
-} 
-
-/* :is(input, select):active {
-    border-color: blue;
 }
-
-:is(input, select):invalid {
-    border-color: red;
-}
-
-:is(input, select):valid {
-    border-color: green; 
-}*/
 
 label {
     display: block;

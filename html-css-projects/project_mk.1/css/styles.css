@@ -1,0 +1,123 @@
+/* body {
+    background: linear-gradient(
+        135deg,
+        #c5c0a1,
+        #b45fde,
+        #c5c0a1
+    );
+    width: 600px;
+    height: 100vh;
+    margin: 0 auto;
+    font-family:'Times New Roman', Times, serif; 
+} */
+/* 0 1 2 3 4 5 6 7 8 9  A B C D E F */
+
+body {
+    /* background: linear-gradient(
+        135deg,
+        #c5c0a1,
+        #b45fde,
+        #c5c0a1
+    ); */
+    background-color: #a5c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}  
+
+
+h2 {
+    text-align: center;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.form-container {
+    max-width: 40vw;
+    width: 600px;
+    padding: 1.5em;
+    border-radius: 8px;
+    background: linear-gradient(
+        33deg,
+        #9f9f9f,
+        #a1a1,
+        #f0a0d5
+    );
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+fieldset {
+    border: none;
+    font-weight: 500;
+    padding: 1.4em;
+}
+
+label {
+    display: block;
+    padding: 0.2em;
+
+}
+
+input {
+    width: 100%;
+    padding: 0.4em;
+    margin-bottom: 0.5em;
+    border: 1px solid rgb(240, 160, 213);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    appearance: none;
+    border: 2px solid rgb(228, 71, 175);
+    outline: none;
+    box-shadow: 0 2px 6px rgb(240, 160, 213),
+                0 0 20px rgb(236, 107, 178);
+    transition: all 0.3s ease;
+}
+
+textarea {
+    display: block;
+}
+
+.form-group label {
+    margin-bottom: 1em;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+}
+
+.radio-group label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    padding: 0;
+    margin: 0;
+}
+
+.radio-group input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0.8em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffb0ee;
+    box-shadow: 0 4px 16px rgb(240, 160, 213),
+                0 0 25px rgb(236, 107, 178)
+}
