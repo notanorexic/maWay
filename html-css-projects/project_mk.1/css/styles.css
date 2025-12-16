@@ -19,7 +19,7 @@ body {
         #b45fde,
         #c5c0a1
     ); */
-    background-color: #a5c3;
+    background-color: #f5e6f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,11 +41,11 @@ h2 {
     border-radius: 8px;
     background: linear-gradient(
         33deg,
-        #9f9f9f,
-        #a1a1,
+        #e8d5e3,
+        #f0d5e8,
         #f0a0d5
     );
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 fieldset {
@@ -57,29 +57,74 @@ fieldset {
 label {
     display: block;
     padding: 0.2em;
-
 }
 
 input {
     width: 100%;
     padding: 0.4em;
     margin-bottom: 0.5em;
-    border: 1px solid rgb(240, 160, 213);
+    border: none;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
-.form-group input:focus {
+select {
+    width: 100%;
+    padding: 0.4em;
+    margin-top: 0.5em;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+select:focus {
     appearance: none;
-    border: 2px solid rgb(228, 71, 175);
+    border: none;
     outline: none;
     box-shadow: 0 2px 6px rgb(240, 160, 213),
                 0 0 20px rgb(236, 107, 178);
     transition: all 0.3s ease;
 }
 
+.form-group input:focus {
+    appearance: none;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 6px rgb(240, 160, 213),
+                0 0 20px rgb(236, 107, 178);
+    transition: all 0.3s ease;
+}
+
+.textarea-group {
+    padding: 1.4em;
+}
+
+.textarea-group label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
 textarea {
     display: block;
+    width: 100%;
+    margin: 0.5em auto 0;
+    padding: 0.4em;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 100px;
+}
+
+textarea:focus {
+    appearance: none;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 6px rgb(240, 160, 213),
+                0 0 20px rgb(236, 107, 178);
+    transition: all 0.3s ease;
 }
 
 .form-group label {
@@ -101,18 +146,58 @@ textarea {
 }
 
 .radio-group input[type="radio"] {
-    width: auto;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
     margin: 0;
+    border: 2px solid rgb(240, 160, 213);
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
 }
 
+.radio-group input[type="radio"]:checked {
+    border-color: rgb(228, 71, 175);
+    background-color: #fff;
+}
+
+.radio-group input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(228, 71, 175);
+}
+
+.radio-group input[type="radio"]:hover {
+    border-color: rgb(228, 71, 175);
+    box-shadow: 0 0 8px rgba(228, 71, 175, 0.4);
+}
+
+.radio-group label:hover {
+    color: #e447af;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}  
+
 button {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0.8em;
+    display: block;
+    margin: 1.5em auto 0;
+    padding: 0.8em 2em;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    background-color: #f0a0d5;
+    color: #fff;
+    font-weight: 500;
     transition: all 0.3s ease;
 }
 
