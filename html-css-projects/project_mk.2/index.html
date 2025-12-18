@@ -3,30 +3,280 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="widtth=device-width", initial-scale="1.0" />
+    <meta name="viewport" content="width=device-width", initial-scale="1.0" />
     <title>Crazy Form</title>
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
     <main class="container">
-        <fieldset>
-            <form class="registration-form" action="url">
+        <h1>Форма регистрации на маршрут <a href="#">"Лазурный"</a></h1>
+        <form class="registration-form" action="url">
+            <fieldset class="sup-info">
                 <legend>Информация о руководителе группы</legend>
-                <label for="your-name">Ваше имя: </label>
-                <input
-                type="text"
-                name="your-name"
-                id="your-name"
-                minlength="2"
-                maxlength="16"
-                required />
+                <div class="fullname">
+                    <label for="fullname">Полное имя: </label>
+                    <input
+                    type="text"
+                    name="fullname"
+                    id="fullname"
+                    minlength="4"
+                    maxlength="64"
+                    placeholder="Александр Сергеевич Пушкин"
+                    required
+                />
+                </div>
+                <div class="sup-age">
+                    <p>Ваш возраст: </p>
+                    <label for="sup-age">
+                        <input
+                        type="number"
+                        name="age"
+                        id="sup-age"
+                        required
+                    />
+                    </label>
+                </div>
+                <div class="sup-experience">
+                    <p>У Вас есть опыт трекинга?</p>
+                    <label for="sup-exp-no">
+                        <input
+                        type="radio"
+                        name="experience"
+                        id="sup-exp-no"
+                        checked
+                    />    
+                        Нет
+                    </label>
+                    <label for="sup-exp-12">
+                        <input
+                        type="radio"
+                        name="experience"
+                        id="sup-exp-12"
+                    />
+                        1-2 года
+                    </label>
+                    <label for="sup-exp-34">
+                        <input
+                        type="radio"
+                        name="experience"
+                        id="sup-exp-34"
+                    />
+                        3-4 года
+                    </label>
+                    <label for="sup-exp-56">
+                        <input
+                        type="radio"
+                        name="experience"
+                        id="sup-exp-56"
+                    />
+                        5-6 лет
+                    </label>
+                    <label for="sup-exp-6more">
+                        <input
+                        type="radio"
+                        name="experience"
+                        id="sup-exp-6more"
+                    />
+                        больше 6 лет
+                    </label>
+                </div>
+                <div class="sex">
+                    <p>Ваш пол: </p>
+                    <label for="sex-male">
+                        <input
+                        type="radio"
+                        name="sex"
+                        id="sex-male"
+                        checked
+                    />
+                        Мужской
+                    </label>
+                    <label for="sex-female">
+                        <input
+                        type="radio"
+                        name="sex"
+                        id="sex-female"
+                    />    
+                        Женский
+                    </label>
+                </div>
+                <div class="sup-phone">
+                    <label for="sup-phone">Номер телефона: </label>
+                    <input
+                        type="tel"
+                        name="sup-phone"
+                        id="sup-phone"
+                        placeholder="+7 (999) 123-45-67"
+                        pattern="\+7\s?\(?\d{3}\)?\s?\d{3}-?\d{2}-?\d{2}"
+                        required
+                    />
+                </div>
+                <div class="sup-email">
+                    <label for="sup-email">Email: </label>
+                    <input
+                        type="email"
+                        name="sup-email"
+                        id="sup-email"
+                        placeholder="journey@gmail.com"
+                        required
+                    />
+                </div>
+                <div class="sup-medical-disclosure">
+                    <label for="sup-medical-info">
+                        Есть ли заболевания/состояния, о которых нам следует знать?
+                    </label>
+                    <textarea name="sup-medical-info" id="sup-medical-info" placeholder="Астма, повышенное давление и т.п." required></textarea>
+                </div>
+                <div class="sup-more-info">
+                    <label for="sup-info">Что ещё мы должны знать?</label>
+                    <textarea name="sup-info" id="sup-info" placeholder="Хочу поймать пикачу, боюсь змей, хочу приручить дикого животного, хочу улететь в отпуск, хочу откусить кусочек настоящего счастья, хочу не опоздать не реинкарнацию, хочу не быть съеденным(ой) горым тигром во время занятия сексом, не заболеть, умерла кошка,бабушка и желание работать, почему я не Анджелина Джоли (ВНИМАНИЕ! писать только если Вы не Анджелина Джоли)"></textarea>
+                </div>
+                <div class="sup-personal-data-info">
+                    <label for="sup-personal-data">
+                        <input type="checkbox" name="sup-personal-data" id="sup-personal-data" required />
+                        Я согласен(а) <a href="#"> на обработку</a> персональных данных<br>
+                    </label>
+                </div>
             </fieldset>
-            <fieldset>
-                
+            <fieldset class="member-info">
+                <legend>Сведения о других участниках: </legend>
+                <div class="member-fullname">
+                    <label for="member-name">ФИО: </label>
+                    <input
+                    type="text"
+                    name="member-name"
+                    id="member-name"
+                    required
+                />
+                </div>
+                <div class="member-age">
+                    <p>Возраст: </p>
+                    <label for="member-age">
+                    <input
+                    type="number"
+                    name="member-age"
+                    id="member-age"
+                    required
+                />
+                    </label>
+                </div>
+                <div class="member-experience">
+                    <p>Опыт: </p>
+                    <label for="mem-exp-no">
+                        <input
+                        type="radio"
+                        name="experience-member"
+                        id="mem-exp-no"
+                        checked
+                    />    
+                        Нет
+                    </label>
+                    <label for="mem-exp-12">
+                        <input
+                        type="radio"
+                        name="experience-member"
+                        id="mem-exp-12"
+                    />
+                        1-2 года
+                    </label>
+                    <label for="mem-exp-34">
+                        <input
+                        type="radio"
+                        name="experience-member"
+                        id="mem-exp-34"
+                    />
+                        3-4 года
+                    </label>
+                    <label for="mem-exp-56">
+                        <input
+                        type="radio"
+                        name="experience-member"
+                        id="mem-exp-56"
+                    />
+                        5-6 лет
+                    </label>
+                    <label for="mem-exp-6more">
+                        <input
+                        type="radio"
+                        name="experience-member"
+                        id="mem-exp-6more"
+                    />
+                        больше 6 лет
+                    </label>
+                </div>
+                <div class="member-sex">
+                    <p>Пол: </p>
+                    <label for="sex-male-member">
+                    <input
+                        type="radio"
+                        name="sex-member"
+                        id="sex-male-member"
+                        checked
+                    />
+                        Мужской
+                    </label>
+                    <label for="sex-female-member">
+                    <input
+                        type="radio"
+                        name="sex-member"
+                        id="sex-female-member"
+                    />
+                        Женский
+                    </label>
+                </div>
+                <div class="member-phone">
+                    <label for="member-phone">Номер телефона: </label>
+                    <input
+                        type="tel"
+                        name="member-phone"
+                        id="member-phone"
+                        placeholder="+7 (999) 123-45-67"
+                        pattern="\+7\s?\(?\d{3}\)?\s?\d{3}-?\d{2}-?\d{2}"
+                        required
+                    />
+                </div>
+                <div class="member-email">
+                    <label for="member-email">Email: </label>
+                    <input
+                        type="email"
+                        name="member-email"
+                        id="member-email"
+                        placeholder="journey@gmail.com"
+                        required
+                    />
+                </div>
+                <div class="member-medical-disclosure">
+                    <label for="member-medical-info">
+                        Есть ли заболевания/состояния, о которых нам следует знать?
+                    </label>
+                    <textarea name="member-medical-info" id="member-medical-info" placeholder="Астма, повышенное давление и т.п." required></textarea>
+                </div>
+                <div class="member-more-info">
+                    <label for="member-info">Что ещё мы должны знать?</label>
+                    <textarea name="member-info" id="member-info" placeholder="Хочу поймать пикачу, боюсь змей, хочу приручить дикого животного, хочу улететь в отпуск, хочу откусить кусочек настоящего счастья, хочу не опоздать не реинкарнацию, хочу не быть съеденным(ой) горым тигром во время занятия сексом, не заболеть, умерла кошка,бабушка и желание работать, почему я не Анджелина Джоли (ВНИМАНИЕ! писать только если Вы не Анджелина Джоли)"></textarea>
+                </div>
             </fieldset>
-            <fieldset>
-                
-            </fieldset>
+            <!-- увы, JS пока не знаю -->
+            <button type="button">Добавить участника</button>
+            <div class="member-personal-data-info">
+                <label for="member-personal-data">
+                    <input
+                        type="checkbox"
+                        name="member-personal-data"
+                        id="member-personal-data"
+                        required
+                    />
+                    Я согласен <a href="#"> на обработку</a> персональных данных участников маршрута <small>*</small><br>
+                    <small>
+                        подтверждая эту инфрмацию Вы принимаете <a href="#"> положение о "..."</a> и несёте наложенную на Вас ответственность
+                    </small>
+                </label>
+            </div>
+            <!-- Либо тут можно сделать в карточке участника галочку на согласие и прикрепить какую-нибудь
+                правильную ссылку,после прохождения на которую и прочтения N-ый пользователь ставит у себя галочку
+                и она отображается на главном экране руководителя маршрута/отправителя формы.
+                Надеюсь в будущем я и такое буду уметь делать-->
+                <button type="submit">Отправить форму</button>
         </form>
     </main>
 </body>
