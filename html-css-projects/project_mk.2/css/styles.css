@@ -1,7 +1,4 @@
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 100%;
     min-height: 100vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -21,6 +18,10 @@ fieldset {
     margin: 2em auto;
 }
 
+fieldset legend {
+    text-align: center;
+}
+
 h1 {
     text-align: center;
 }
@@ -34,33 +35,11 @@ legend {
     font-size: 1.4em;
 }
 
-/* Но я не знаю как это делать, если будут новые участники добавляться */
-/* :is(.sup-email,
-.sup-phone,
-.member-email,
-.member-phone) input {
-    display: inblock;
-}
-
-:is(.fullname,
-.sup-age,
-.sup-experience,
-.sup-email,
-.sup-phone,
-.sup-medical-desclosure,
-.sup-more-info,
-.member-sullname,
-.member-age,
-.member-experience,
-.member-email,
-.member-phone,
-.member-medial-desclosure,
-.member-more-info) label {
+:is(input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"]) {
     display: block;
-    margin: 0;
-} */
-
-.fullname input {
     width: 100%;
 }
 
