@@ -11,11 +11,16 @@ body {
     padding: 1em .6em 1em;
     border-radius: 12px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+    background-color: #ffffff;
 }
 
 fieldset {
     border: none;
     margin: 2em auto;
+}
+
+fieldset > div {
+    margin-bottom: 0.7em;
 }
 
 fieldset legend {
@@ -38,12 +43,17 @@ legend {
 }
 
 .container input {
-    padding: 0.3em 0;
+    padding: 0.3em 0 0.3em 0.5em;
     margin: 0.2em 0 0.7em;
+    border: 1px solid #999;
+    border-radius: 3px;
 }
 
 .container textarea {
+    padding-left: 0.5em;
     margin: 0.2em  0 0.7em;
+    border: 1px solid #999;
+    border-radius: 3px;
 }
 
 :is(input[type="text"],
@@ -57,14 +67,15 @@ input[type="tel"]) {
 textarea {
     display: block;
     width: 100%;
+    min-height: 7em;
+    resize: vertical;
 }
 
 fieldset div:last-of-type {
     margin-top: 1.5em;
     padding: 1em;
     background-color: #f5f5f5;
-    border-radius: 8px;
-    border-left: 4px solid #4a90e2;
+    border-left: 4px solid #3593ff;
 }
 
 .add-member-btn {
@@ -75,4 +86,14 @@ fieldset div:last-of-type {
     width: 80%;
     display: block;
     margin: 2em auto 1em;
+}
+
+.container :is(input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea):focus {
+    appearance: none;
+    outline: none;
+    border-color: #3593ff;
 }
