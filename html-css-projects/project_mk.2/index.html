@@ -249,28 +249,28 @@
                     <label for="member-info">Что ещё мы должны знать?</label>
                     <textarea name="member-info" id="member-info" placeholder="Хочу поймать пикачу, боюсь змей, хочу приручить дикого животного, хочу улететь в отпуск, хочу откусить кусочек настоящего счастья, хочу не опоздать не реинкарнацию, хочу не быть съеденным(ой) горым тигром во время занятия сексом, не заболеть, умерла кошка,бабушка и желание работать, почему я не Анджелина Джоли (ВНИМАНИЕ! писать только если Вы не Анджелина Джоли)"></textarea>
                 </div>
+                <!-- увы, JS пока не знаю -->
+                <button type="button" class="add-member-btn">Добавить участника</button>
+                <div class="member-personal-data-info">
+                    <label for="member-personal-data">
+                    <input
+                        type="checkbox"
+                        name="member-personal-data"
+                        id="member-personal-data"
+                        required
+                    />
+                        Я согласен <a href="#"> на обработку</a> персональных данных участников маршрута <small>*</small><br>
+                        <small>
+                            подтверждая эту инфрмацию Вы принимаете <a href="#"> положение о "..."</a> и несёте наложенную на Вас ответственность
+                        </small>
+                    </label>
+                </div>
             </fieldset>
-            <!-- увы, JS пока не знаю -->
-            <button type="button">Добавить участника</button>
-            <div class="member-personal-data-info">
-                <label for="member-personal-data">
-                <input
-                    type="checkbox"
-                    name="member-personal-data"
-                    id="member-personal-data"
-                    required
-                />
-                    Я согласен <a href="#"> на обработку</a> персональных данных участников маршрута <small>*</small><br>
-                    <small>
-                        подтверждая эту инфрмацию Вы принимаете <a href="#"> положение о "..."</a> и несёте наложенную на Вас ответственность
-                    </small>
-                </label>
-            </div>
             <!-- Либо тут можно сделать в карточке участника галочку на согласие и прикрепить какую-нибудь
                 правильную ссылку,после прохождения на которую и прочтения N-ый пользователь ставит у себя галочку
                 и она отображается на главном экране руководителя маршрута/отправителя формы.
                 Надеюсь в будущем я и такое буду уметь делать-->
-                <button type="submit">Отправить форму</button>
+                <button type="submit" class="submit-form">Отправить форму</button>
         </form>
     </main>
 </body>
