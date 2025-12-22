@@ -8,10 +8,43 @@ body {
     max-width: 800px;
     width: 90%;
     margin: 0 auto;
-    padding: 1em .6em 1em;
+    padding: 1em 0.6em 1em;
     border-radius: 12px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
     background-color: #ffffff;
+}
+
+.container :is(input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea) {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin: 0.2em 0 0.7em;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+
+.container input {
+    padding: 0.3em 0 0.3em 0.5em;
+}
+
+.container textarea {
+    padding-left: 0.5em;
+    min-height: 7em;
+    resize: vertical;
+}
+
+.container :is(input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea):focus {
+    appearance: none;
+    outline: none;
+    border-color: #3593ff;
 }
 
 fieldset {
@@ -27,48 +60,18 @@ fieldset legend {
     text-align: center;
 }
 
+legend {
+    font-size: 1.4em;
+}
+
 h1 {
     text-align: center;
-    margin-top: 1;
-    margin-bottom: 1em;
+    margin: 1em 0;
 }
 
 p {
     margin: 0;
     padding: 0;
-}
-
-legend {
-    font-size: 1.4em;
-}
-
-.container input {
-    padding: 0.3em 0 0.3em 0.5em;
-    margin: 0.2em 0 0.7em;
-    border: 1px solid #999;
-    border-radius: 3px;
-}
-
-.container textarea {
-    padding-left: 0.5em;
-    margin: 0.2em  0 0.7em;
-    border: 1px solid #999;
-    border-radius: 3px;
-}
-
-:is(input[type="text"],
-input[type="email"],
-input[type="number"],
-input[type="tel"]) {
-    display: block;
-    width: 100%;
-}
-
-textarea {
-    display: block;
-    width: 100%;
-    min-height: 7em;
-    resize: vertical;
 }
 
 fieldset div:last-of-type {
@@ -86,14 +89,4 @@ fieldset div:last-of-type {
     width: 80%;
     display: block;
     margin: 2em auto 1em;
-}
-
-.container :is(input[type="text"],
-input[type="email"],
-input[type="number"],
-input[type="tel"],
-textarea):focus {
-    appearance: none;
-    outline: none;
-    border-color: #3593ff;
 }

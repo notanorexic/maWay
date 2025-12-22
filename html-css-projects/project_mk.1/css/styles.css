@@ -1,24 +1,5 @@
-/* body {
-    background: linear-gradient(
-        135deg,
-        #c5c0a1,
-        #b45fde,
-        #c5c0a1
-    );
-    width: 600px;
-    height: 100vh;
-    margin: 0 auto;
-    font-family:'Times New Roman', Times, serif; 
-} */
 /* 0 1 2 3 4 5 6 7 8 9  A B C D E F */
-
 body {
-    /* background: linear-gradient(
-        135deg,
-        #c5c0a1,
-        #b45fde,
-        #c5c0a1
-    ); */
     background-color: #f5e6f0;
     display: flex;
     justify-content: center;
@@ -27,7 +8,6 @@ body {
     margin: 0;
     font-family:'Times New Roman', Times, serif;
 }  
-
 
 h2 {
     text-align: center;
