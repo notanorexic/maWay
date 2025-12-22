@@ -140,11 +140,6 @@ textarea:focus {
     transition: all 0.3s ease;
 }
 
-.radio-group input[type="radio"]:checked {
-    border-color: rgb(228, 71, 175);
-    background-color: #fff;
-}
-
 .radio-group input[type="radio"]:checked::before {
     content: '';
     position: absolute;
@@ -155,6 +150,11 @@ textarea:focus {
     height: 10px;
     border-radius: 50%;
     background-color: rgb(228, 71, 175);
+}
+
+.radio-group input[type="radio"]:checked {
+    border-color: rgb(228, 71, 175);
+    background-color: #fff;
 }
 
 .radio-group input[type="radio"]:hover {

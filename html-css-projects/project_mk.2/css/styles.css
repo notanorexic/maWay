@@ -91,17 +91,33 @@ fieldset div:last-of-type {
     margin: 2em auto 1em;
 }
 
-/* TODO: доделать кнопки */
 input[type='radio'] {
     appearance: none;
-    width: 1em;
-    height: 1em;
+    width: 1.1em;
+    height: 1.1em;
     margin: 0;
     border: 2px solid #d0e6ff;
     border-radius: 50%;
     background-color: #fff;
     cursor: pointer;
-    transition: all 0.3 ease;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+input[type='radio']::before {
+    content: '';
+    position: absolute;
+    inset: 50%;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: #2a8eff;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease;
+}
+
+input[type='radio']:checked::before {
+    transform: translate(-50%, -50%) scale(1);
 }
 
 input[type='radio']:checked {
