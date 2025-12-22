@@ -91,6 +91,22 @@ fieldset div:last-of-type {
     margin: 2em auto 1em;
 }
 
+:is(.sup-experience,
+.sup-sex,
+.member-experience,
+.member-sex) label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+}
+
+:is(.sup-experience,
+.sup-sex,
+.member-experience,
+.member-sex) label:hover {
+    cursor: pointer;
+}
+
 input[type='radio'] {
     appearance: none;
     width: 1.1em;
@@ -127,11 +143,4 @@ input[type='radio']:checked {
 
 input[type='radio']:hover {
     border-color: #2a8eff;
-}
-
-:is(.sup-experience,
-.sup-sex,
-.member-experience,
-.member-sex) label:hover {
-    cursor: pointer;
 }
