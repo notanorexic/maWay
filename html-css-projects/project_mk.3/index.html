@@ -8,9 +8,95 @@
 </head>
 <body>
     <main class="container">
-        <h1></h1>
-        <form action="url">
+        <h1>Форма для развлечения</h1>
+        <form class="registration-form" action="url">
+            <fieldset class="leader-data">
+                <legend>Лидер группы</legend>
+                <div class="leader-first-name">
+                    <label for="first-name">FIRST NAME:</label>
+                    <input
+                        type="text"
+                        name="first-name"
+                        id="first-name"
+                        required
+                    />
+                </div>
+                <div class="leader-second-name">
+                    <label for="second-name">SECOND NAME:</label>
+                    <input
+                        type="text"
+                        name="second-name"
+                        id="second-name"
+                        required
+                    />
+                </div>
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="youremail@gmail.com"
+                        required    
+                    />
+                </div>
+                <div class="leader-age">
+                    <label for="leader-age">Age:</label>
+                    <input
+                        type="number"
+                        name="leader-age"
+                        id="leader-age"
+                        required
+                    />    
+                </div>
+                <div class="sex">
+                    <p>Ваш пол:</p>
+                    <label for="sex-male">
+                    <input
+                        type="radio"
+                        name="sex"
+                        id="sex-male"
+                        checked
+                    />
+                        Мужской
+                    </label>
+                    <label for="sex-female">
+                    <input
+                        type="radio"
+                        name="sex"
+                        id="sex-female"
+                    />
+                        Женский
+                    </label>
+                </div>
+                <!-- TODO: доделать -->
+                <div class="marital-status">
+                    <p>Семейное положение:</p>
+                    <label for="single">
+                    <input
+                        type="radio"
+                        name="marital-status"
+                        id="single"
+                        checked
+                    />
+                        Холост
+                    </label>
+                    <label for="divorced">
+                    <input
+                        type="radio"
+                        name="marital-status"
+                        id="divorced"
+                    />
+                        В разводе
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="group-data">
 
+            </fieldset>
+            <fieldset class="additional-info">
+
+            </fieldset>
         </form>
     </main>
 </body>
