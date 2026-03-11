@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width", initial-scale="1.0" />
+    <title>Formochka</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+    <main class="container">
+        <h1>Формочка</h1>
+        <form class="registration-form" action="url">
+            <fieldset class="user-data"">
+                <div class="first-name">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" name="first-name" id="first-name" required
+                    />
+                </div>
+                <div class="last-name">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" name="last-name" id="last-name" required
+                    />
+                </div>
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required
+                    />
+                </div>
+                <div>
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" required
+                    />
+                </div>
+                <div class="sex">
+                    <p>Ваш пол:</p>
+                    <label>
+                        <input type="radio" name="sex" id="sex-male" checked required />
+                        Мужской
+                    </label>
+                    <label>
+                        <input type="radio" name="sex" id="sex-female" required />
+                        Женский
+                    </label>
+                </div>
+                <div class="marital-status">
+                    <p>Семейное положение:</p>
+                    <label>
+                        <input type="radio" name="marital-status" id="single" checked required
+                        />
+                        Холост
+                    </label>
+                    <label>
+                        <input type="radio" name="marital-status" id="married" required
+                        />
+                        Женат
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
