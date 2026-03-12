@@ -78,6 +78,32 @@
                     </label>
                 </div>
             </fieldset>
+            <fieldset class="choose-city">
+                <legend>Выберите город</legend>
+                <div class="city">
+                    <p>Город</p>
+                    <label>
+                        <input type="radio" name="city" id="city-sankt-peterburg" checked required
+                        />
+                        Санкт-Петербург
+                    </label>    
+                    <label>
+                        <input type="radio" name="city" id="city-kyiv" required
+                        />
+                        Киев
+                    </label>
+                    <label>
+                        <input type="radio" name="city" id="city-copenhagen" required
+                        />
+                        Копенгаген
+                    </label>
+                </div>
+            </fieldset>
+            <div class="user-comment">
+                <label for="comment">Комментарий:</label>
+                <textarea name="comment" id="comment" placeholder="Введите ваш комментарий"></textarea>
+            </div>
+            <button type="submit">Отправить</button>
         </form>
     </main>
 </body>
