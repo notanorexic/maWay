@@ -56,10 +56,10 @@
                     </label>
                 </div>
             </fieldset>
-            <fieldset class="choose-country">
-                <legend>Выберите страну</legend>
+            <fieldset class="filter">
+                <legend>Корзина</legend>
                 <div class="country">
-                    <p>Страна</p>
+                    <p>Выберите страну</p>
                     <label>
                         <input type="radio" name="country" id="county-russia" checked required
                         />
@@ -77,11 +77,8 @@
                     </label>
                     </label>
                 </div>
-            </fieldset>
-            <fieldset class="choose-city">
-                <legend>Выберите город</legend>
                 <div class="city">
-                    <p>Город</p>
+                    <p>Выберите город</p>
                     <label>
                         <input type="radio" name="city" id="city-sankt-peterburg" checked required
                         />
@@ -98,10 +95,26 @@
                         Копенгаген
                     </label>
                 </div>
+                <div class="select">
+                    <!-- хз что такое multiple, но оставляю -->
+                    <p>Что для Вас важно?</p>
+                    <select name="imp-wish-item[]" id="wish" multiple>
+                        <option value="grass">Трава</option>
+                        <option value="axe">Топор</option>
+                        <option value="sky">Небеса-а-а</option>
+                    </select>
+                </div>
             </fieldset>
             <div class="user-comment">
                 <label for="comment">Комментарий:</label>
                 <textarea name="comment" id="comment" placeholder="Введите ваш комментарий"></textarea>
+            </div>
+            <div class="agreement">
+                <label>
+                    <input type="checkbox" name="agree" id="agree" required
+                    />
+                    Я согласен(а) <a href="#"> на обработку</a> персональных данных
+                </label>
             </div>
             <button type="submit">Отправить</button>
         </form>

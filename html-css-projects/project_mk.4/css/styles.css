@@ -20,7 +20,20 @@ body {
     background-color: #fff;
 }
 
-/* Комментарий: label сверху, поле ниже */
+h1 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container :is(input[type="text"],
+input[type="email"],
+input[type="number"]) {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* label сверху, поле ниже */
 .user-comment {
     display: flex;
     flex-direction: column;
@@ -38,7 +51,14 @@ textarea {
     border-radius: 8px;
 }
 
+.agreement {
+    margin: 1.5em 0;
+    padding: 1em;
+    background-color: #f5f5f5;
+    border-left: 4px solid #e64141;
+}
+
 button[type="submit"] {
     display: block;
-    margin-top: 0.8rem;
+    margin: 1rem auto 0;
 }
